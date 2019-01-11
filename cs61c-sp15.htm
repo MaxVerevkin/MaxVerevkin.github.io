@@ -1,0 +1,752 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.01 transitional//en">
+<html><head>
+   <meta http-equiv="Pragma" content="no-cache">
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   <title>CS61C Spring 2015: Great Ideas in Computer Architecture (Machine Structures)</title>
+   <link href="mailto:cs61c-ta@imail.eecs.berkeley.edu" rev="made">
+</head>
+
+<body bgcolor="#FFFFEF">
+
+
+<table width="100%" cellspacing="0" cellpadding="2" border="0" align="center">
+<tbody><tr><td bgcolor="#000000">
+<div align="center">
+  <center>
+
+<table style="border-collapse: collapse;" width="100%" cellspacing="0" cellpadding="10" bordercolor="#111111" border="0">
+
+</table><table style="border-collapse: collapse; width: 100%;" cellspacing="0" cellpadding="4" bordercolor="#111111" border="1">
+ <!-- Column Headers -->
+ <tbody>
+     <tr bgcolor="#b0b0b0">
+
+       <th width="50"><b>Wk</b></th>
+       <th><b>Date</b></th>
+       <th><b>Lecture Topic</b></th>
+
+       <th><b>Reading</b></th>
+       <th><b>Section</b></th>
+
+       <th><b>Lab</b></th>
+       <th><b>Assignment Due<br>
+</b></th>
+</tr>
+
+<!-- Week 1 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">1<br></td>
+
+  <td bgcolor="#e0e0e0">01/20 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/01">Intro, Number Representation</a></td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 2.4 <br>
+(5th) P&amp;H: 2.4 <br>
+<a href="http://inst.eecs.berkeley.edu/~cs61c/resources/binaryslides.pdf">Binary slides</a>
+  </td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/00">Section 0: Number Representation</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/00">Lab 0: Intro, git, Number Rep<br></a>
+  </td>
+  <td rowspan="4" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/00/hw0.html">HW0: Intro and Number Representation</a>
+    <br>Due 02/01 @ 23:59:59
+  </td>
+
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">01/22 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/02">C Intro, Pointers</a> </td>
+  <td bgcolor="#e0e0e0">
+<a href="http://inst.eecs.berkeley.edu/~cs61c/resources/HarveyNotesC1-3.pdf">B. Harvey's Intro to C</a><br>
+K&amp;R Ch. 1-5
+</td>
+</tr>
+
+
+<!-- Week 2 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">2<br></td>
+
+  <td bgcolor="#e0e0e0">01/27 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/03">C Arrays, Strings, Pointers</a></td>
+  <td bgcolor="#e0e0e0">K&amp;R Ch. 5-6<br>
+<a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/garcia_C/C_reference_slides.pdf">C Reference Slides</a></td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/01">Section 1: C Basics</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/01">Lab 1: C and GDB<br></a>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">01/29 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/04">C Memory Mangement, Usage</a> </td>
+  <td bgcolor="#e0e0e0">K&amp;R: 7.8.5, 8.7</td>
+</tr>
+
+
+
+<!-- Week 3 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">3<br></td>
+
+  <td bgcolor="#e0e0e0">02/03 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/05">Intro to Assembly Language, MIPS Intro</a></td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 2.1-2.3<br>
+(5th) P&amp;H: 2.1-2.3
+</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/02">Section 2: C Memory Management and MIPS Intro</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/02">Lab 2: Advanced C, Memory Management<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/01/hw1.html">HW1: C (Build git Part I)</a>
+    <br>Due 02/08 @ 23:59:59
+  </td>
+
+
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">02/05 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/06">MIPS, MIPS Functions</a> </td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 2.6 - 2.9, 2.10 (only p.128-129), B.6 <br>
+(5th) P&amp;H: 2.6 - 2.9, 2.10 (only p.111-113), A.6
+</td>
+</tr>
+
+
+<!-- Week 4 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">4<br></td>
+
+  <td bgcolor="#e0e0e0">02/10 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/07">MIPS Instruction Formats</a></td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 2.5, 2.10 <br>
+(5th) P&amp;H: 2.5, 2.10
+</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/03">Section 3: MIPS II / Instruction Formats</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/03">Lab 3: MIPS Assembly<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/02/hw2.html">HW2: Advanced C (Build git Part II)</a>
+    <br>Due 02/15 @ 23:59:59
+  </td>
+
+
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">02/12 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/08">Compiler, Assembler, Linker, Loader (CALL)</a> </td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 2.12, B.1-B.4 <br>
+(5th) P&amp;H: 2.12, A.1-A.4
+</td>
+</tr>
+
+<!-- Week 5 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">5<br></td>
+
+  <td bgcolor="#e0e0e0">02/17 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/09">Intro to Synchronous Digital Systems (SDS), Logic</a></td>
+  <td bgcolor="#e0e0e0">
+<a href="http://inst.eecs.berkeley.edu/~cs61c/resources/sds.pdf">SDS Handout</a><br>
+<a href="http://inst.eecs.berkeley.edu/~cs61c/resources/boolean.pdf">Logic Handout</a><br>
+(4th) P&amp;H: C.2-C.3 (on CD) <br>
+(5th) P&amp;H: B.2-B.3
+</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/04">Section 4: MIPS Procedures / CALL</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/04">Lab 4: MIPS Functions, Pointers<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/01">Project 1, Part 1: C and MIPS</a>
+    <br>Due 03/01 @ 23:59:59
+    <br>&nbsp;
+    <br><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/03/CS61C_Homework3.pdf">HW3: C to MIPS Practice Problems </a>
+    <br>Ungraded (<a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/03/CS61C_Homework3Soln.pdf">Solution</a>)
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">02/19 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/10">Functional Units, FSMs</a> </td>
+  <td bgcolor="#e0e0e0">
+<a href="http://inst.eecs.berkeley.edu/~cs61c/resources/blocks.pdf">Blocks Handout</a><br>
+(4th) P&amp;H: 4.2, C.3-C.6 (on CD)  <br>
+(5th) P&amp;H: 4.2, B.3-B.6 <br>
+<a href="http://inst.eecs.berkeley.edu/~cs61c/resources/state.pdf">State Handout</a><br>
+</td>
+</tr>
+
+<!-- Week 6 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">6<br></td>
+
+  <td bgcolor="#e0e0e0">02/24 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/11">MIPS Datapath, Single-Cycle Control Intro</a></td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 4.1, 4.3, 4.4<br>
+(5th) P&amp;H: 4.1, 4.3, 4.4
+</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/05">Section 5: Logic and SDS</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/05">Lab 5: Logisim<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/01/part2.html">Project 1, Part 2: MIPS</a>
+    <br>Due 03/07 @ 23:59:59 (a Saturday!)
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">02/26 Th</td>
+  <td colspan="2" bgcolor="#ffd080"><strong>Midterm I (Covers up to and including week 4 lectures, in-class)</strong></td>
+<!--  <td bgcolor="#e0e0e0"></td>-->
+</tr>
+
+<!-- Week 7 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">7<br></td>
+
+  <td bgcolor="#e0e0e0">03/03 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/12">MIPS Single-Cycle Control, Pipelining Intro</a></td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 4.5-4.8<br>
+(5th) P&amp;H: 4.5-4.8
+</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/06">Section 6: Single-Cycle Datapath</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/06">Lab 6: More Logisim, ALU Design<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/04">HW4: Logic, FSMs</a>
+      <br>Due 03/10 @ 23:59:59 (a Tuesday!)
+    <br><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/04/hw4sol.txt">Solutions</a>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">03/05 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/13">MIPS Pipelining Hazards</a> </td>
+  <td bgcolor="#e0e0e0">
+(4th) P&amp;H: 4.10, 4.11<br>
+(5th) P&amp;H: 4.10, 4.11
+</td>
+</tr>
+
+
+<!-- Week 8 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="3" style="text-align: center;" bgcolor="#e0e0e0">8<br></td>
+
+  <td bgcolor="#e0e0e0">03/10 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/14">Memory Hierarchy, Fully Associative Caches</a></td>
+  <td bgcolor="#e0e0e0">
+    (4th) P&amp;H: 5.1, 5.2 (p. 457-470), 5.3, 5.5, 1.4<br>
+    (5th) P&amp;H: 5.1, 5.2, 5.3, 5.4, 5.8, 1.6<br>
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/caches.pdf">Cache Flowchart</a>
+  </td>
+
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/07">Section 7: Pipelining</a>
+  </td>
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/07">Lab 7: CPU Project Prep<br></a>
+  </td>
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/02/index.html">Project 2, Part 1: ALU and Regfile</a>
+      <br>Due 03/15 @ 23:59:59
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">03/12 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/15">Caches: Direct-mapped, Set-associative, Performance</a> </td>
+  <td bgcolor="#e0e0e0">See 3/10 lec</td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">03/14 Sat</td>
+  <td colspan="2" bgcolor="#ffd080"><strong>Guerrilla Section #1 (<a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/guerrilla/01/Guerrilla1.pdf">Worksheet</a>, <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/guerrilla/01/Guerrilla1_Soln.pdf">Solutions</a>)</strong></td>
+</tr>
+
+
+<!-- Week 9 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">9<br></td>
+
+  <td bgcolor="#e0e0e0">03/17 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/16">Multilevel Caches, Cache Questions</a></td>
+  <td bgcolor="#e0e0e0">See 3/10 lec</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/08">Section 8: Caches</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/08">Lab 8: Caches<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/02/index.html">Project 2, Part 2: CPU</a>
+    <br>Due 03/24 @ 23:59:59<br>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">03/19 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/17">Performance, Floating Point, Tech Trends</a> </td>
+  <td bgcolor="#e0e0e0">
+    (4th) P&amp;H: 3.5, 3.8<br>
+    (5th) P&amp;H: 3.5. 3.9<br>
+    <a href="http://www.h-schmidt.net/FloatApplet/IEEE754.html">IEEE 754 Simulator</a>
+  </td>
+</tr>
+
+
+
+<!-- Week 10 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">10<br></td>
+
+  <td bgcolor="#e0e0e0">03/24 Tu</td>
+  <td colspan="5" bgcolor="#ffffd0"><strong>Administrative Holiday (Spring Break)</strong></td>
+</tr>
+
+<tr>
+  <td bgcolor="#e0e0e0">03/26 Th</td>
+  <td colspan="5" bgcolor="#ffffd0"><strong>Administrative Holiday (Spring Break)</strong></td>
+</tr>
+
+
+
+<!-- Week 11 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="3" style="text-align: center;" bgcolor="#e0e0e0">11<br></td>
+
+  <td bgcolor="#e0e0e0">03/31 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/18">Flynn Taxonomy, Data-Level Parallelism</a></td>
+  <td bgcolor="#e0e0e0">
+    (4th) P&amp;H: 1.5, 1.6, 7.1, 7.2, 7.4, 7.6 <br>
+    (5th) P&amp;H: 1.7, 1.8, 6.1, 6.2, 6.3, 6.7
+  </td>
+
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/09">Section 9: Floating Point, AMAT, Flynn Taxonomy</a>
+  </td>
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/09">Lab 9: SIMD Instructions<br></a>
+  </td>
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/05">HW5: Caches/Floating-Point</a>
+    <br>Due 04/05 @ 23:59:59
+    <br><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/05/hw5sol.txt">Solutions</a>
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/02 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/19">Amdahl's Law, Thread-Level Parallelism, OpenMP Intro</a> </td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 7.3, 5.8, 2.11<br>
+    (5th) P&amp;H: 6.5, 5.10, 2.11<br>
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/OpenMP3.0-SummarySpec.pdf">OpenMP Summary Card</a></td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/04 Sat</td>
+  <td colspan="2" bgcolor="ffd080"><strong>Midterm II Review Session (<a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/review/mt2_review.pdf">Problems</a>, <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/review/mt2_review_sol.pdf">Solutions</a>)</strong></td>
+</tr>
+
+<!-- Week 12 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="3" style="text-align: center;" bgcolor="#e0e0e0">12<br></td>
+  <td bgcolor="e0e0e0">04/05 Sun</td>
+  <td colspan="2" bgcolor="#ffd080"><strong>Guerrilla Section #2 (<a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/guerrilla/02/Guerrilla2.pdf">Worksheet</a>, <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/guerrilla/02/Guerrilla2_Soln.pdf">Solutions</a>)</strong></td>
+
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/10">Section 10: Cache Coherence, Synchronization</a>
+  </td>
+  <td rowspan="3" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/10">Lab 10: Thread-Level Parallelism, OpenMP<br></a>
+  </td>
+  
+  <td rowspan="3" bgcolor="#e0e0e0">
+    None
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/07 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/20">Cache Coherence, OpenMP Sharing Issues, Performance</a></td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 5.8<br>
+(5th) P&amp;H: 5.10  </td>
+
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/09 Th</td>
+  <td colspan="2" bgcolor="#ffd080"><strong>Midterm II (Covers up to and including 3/31 lecture, in-class)</strong></td>
+
+</tr>
+
+
+<!-- Week 13 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">13<br></td>
+
+  <td bgcolor="#e0e0e0">04/14 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/21">Warehouse Scale Computing, MapReduce (Spark)</a></td>
+  <td bgcolor="#e0e0e0">
+    <a href="http://inst.eecs.berkeley.edu/~cs61c/resources/WSCBarrosoHolzle.pdf">The Datacenter as a Computer</a>: Ch 1, Ch 2.4, Ch 3, 5.1-5.3
+  </td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/11">Section 11: Spark and Warehouse Scale Computing</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/11">Lab 11: MapReduce and Spark<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/03/index.html">Project 3: Performance Programming</a>
+    <br>Due 04/19 @ 23:59:59
+  </td>
+
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/16 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/22">OS Support, Base and Bounds, Interrupts, Virtual Memory Intro</a></td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 5.10-5.12<br>
+  (5th) P&amp;H: 5.13, 5.15, 5.16</td>
+</tr>
+
+<!-- Week 14 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">14<br></td>
+
+  <td bgcolor="#e0e0e0">04/21 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/23">More Virtual Memory, Intro to I/O</a></td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 6.6, 4.9 <br>
+  (5th) P&amp;H: 6.9 (only p.4-10), 4.9</td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/12">Section 12: Virtual Memory and I/O</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/labs/12">Lab 12: Virtual Memory<br></a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/04/neural_nets.html">Project 4: Intro</a>
+    <br><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/04/index.html">Project 4, Part 1: Spark</a>
+    <br>Due 04/29 @ 23:59:59
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/23 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/24">I/O: DMA, Disks, Networking</a></td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 6.2-6.4, 6.9 <br>
+  (5th) 5.2, 5.5, 5.11 </td>
+</tr>
+
+<!-- Week 15 -->
+
+<tr bgcolor="#ffffff">
+  <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">15<br></td>
+
+  <td bgcolor="#e0e0e0">04/28 Tu</td>
+  <td colspan="1" bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/25">Dependability: Parity, ECC, RAID</a></td>
+  <td bgcolor="#e0e0e0">(4th) P&amp;H: 6.2, C-65 to C-67 <br>
+    (5th) P&amp;H: 5.5, B-65 to B-67<br>
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/Patterson88.pdf">Berkeley RAID Paper</a></td>
+
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/disc/13">Section 13: Parity, ECC, RAID</a>
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <!--<a href="labs/01">-->None<!--</a>-->
+  </td>
+  <td rowspan="2" bgcolor="#e0e0e0">
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/projs/04/index2.html">Project 4, Part 2: Spark on EC2</a>
+    <br>Due 05/03 @ 23:59:59<br>
+    <br><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/06">HW6: Virtual Memory</a>
+    <br>Due 05/03 @ 23:59:59
+    <br><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/hw/06/hw6sol.txt">Solutions</a>
+
+  </td>
+</tr>
+
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">04/30 Th</td>
+  <td bgcolor="#e0e0e0"><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/lec/26">Summary, What's Next?</a></td>
+  <td bgcolor="#e0e0e0">None</td>
+</tr>
+
+
+<!-- RRR Week, Final Exam -->
+
+<tr bgcolor="#ffffff">
+
+    <td rowspan="2" style="text-align: center;" bgcolor="#e0e0e0">RRR<br></td>
+  <td bgcolor="#e0e0e0">05/06 W</td>
+  <td colspan="5" bgcolor="#ffd080"><strong>Final Exam Review: 2-5pm, 105 Stanley</strong></td>
+
+</tr>
+<tr bgcolor="#ffffff">
+  <td bgcolor="#e0e0e0">05/07 Th</td>
+  <td colspan="5" bgcolor="#ffd080"><strong>Guerrilla Section #3 (<a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/guerrilla/03/Guerrilla3.pdf">Worksheet</a>,
+      <a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/guerrilla/03/Guerrilla3_Soln.pdf">Solutions</a>)</strong></td>
+</tr>
+
+<tr bgcolor="#ffffff">
+
+    <td rowspan="1" style="text-align: center;" bgcolor="#e0e0e0">Finals<br></td>
+  <td bgcolor="#e0e0e0">05/15 F</td>
+  <td colspan="5" bgcolor="#ffd080"><strong>Final Exam: 7:00pm-10:00pm, Location TBD</strong>
+        <!-- <br>(<a href="cs61c_sp13_final.pdf">Final</a>) (<a href="cs61c_sp13_final_answers.pdf">Answers</a>) (<a href="cs61c_sp13_final_rubric.pdf">Rubric</a>) --></td>
+
+</tr>
+
+</tbody></table></center></div></td></tr></tbody></table>
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><!-- Begin General Info Section -->
+
+<a name="Resources"></a>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" align="center">
+<tbody><tr><td bgcolor="#000000">
+<table width="100%" cellspacing="0" cellpadding="10" border="0" align="center">
+<tbody><tr><td bgcolor="#EEEDD0">
+<h2>Resources and Handouts</h2>
+
+<table cellspacing="2" cellpadding="2">
+	
+  <tbody><tr>
+    <td>Reference card for GDB version 5:
+    &nbsp;(<a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/gdb5-refcard.pdf">pdf</a> |
+    <a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/gdb5-refcard.ps">ps</a> | <a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/gdb5-refcard.dvi">dvi</a>)</td>
+  </tr>
+
+  <tr>
+    <td>Harvey notes on C:
+    &nbsp;(<a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/HarveyNotesC1-3.pdf">pdf</a>)</td>
+  </tr>
+
+  <tr>
+    <td>Hilfinger notes on Memory Management:
+    &nbsp;(<a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/pnh.stg.mgmt.pdf">pdf</a>)</td>
+  </tr>
+
+  <tr>
+    <td>MIPS Green Sheet:
+    &nbsp;(<a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/MIPS_Green_Sheet.pdf">pdf</a>)</td>
+  </tr> 
+
+  <tr>
+    <td>MIPS Helper Sheet:
+    &nbsp;(<a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/MIPS_help.html">html</a>)</td>
+  </tr> 
+
+  <tr>
+    <td>Floating Point Java Demos:
+    &nbsp;(<a href="http://users-tima.imag.fr/cis/guyot/Cours/Oparithm/english/Flottan.htm">html</a>)</td>
+  </tr>
+
+</tbody></table>
+
+
+<hr align="left">
+
+<table>
+  <tbody><tr>
+  <td><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/images/P&amp;H.jpg"><img src="CS61C%20Spring%202015_files/PH.jpg" alt="P&amp;H" height="60" align="LEFT"></a>
+  </td><td>We will be using the <b>fifth edition</b> of Patterson and Hennessy's <i>Computer Organization and Design</i> book ("P&amp;H"), ISBN <b>0124077269</b>.
+
+  </td></tr><tr>
+  <td><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/images/K&amp;R.jpg"><img src="CS61C%20Spring%202015_files/KR.jpg" alt="K&amp;R" height="60" align="LEFT"></a>
+  </td><td>We are also requiring <i>The C Programming Language, Second Edition</i> by Kernighan and Ritchie ("K&amp;R"), and will reference its sections in the reading assignments.
+Other books are also suitable if you are already comfortable with them, but our lectures will be based on K&amp;R.
+
+  </td></tr><tr>
+  <td><a href="http://www-inst.eecs.berkeley.edu/~cs61c/sp15/images/WSC.jpg"><img src="CS61C%20Spring%202015_files/WSC.jpg" alt="WSC" height="60" align="LEFT"></a>
+  </td><td>Finally, we will be using <i>The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines</i> ("WSC"), which is freely available online <a href="http://www-inst.eecs.berkeley.edu/~cs61c/resources/WSCBarrosoHolzle.pdf">here</a>.
+</td></tr></tbody></table>
+
+<p>
+The subjects covered in this course include:
+C and assembly language programming,
+how higher level programs are translated into machine language,
+computer organization,
+caches,
+performance measurement,
+parallelism,
+CPU design,
+warehouse-scale computing,
+and related topics.
+The only prerequisite is that you have taken CS61B, or at least have solid experience with a C-based programming language.
+
+</p>
+</td></tr></tbody></table>
+</td></tr></tbody></table>
+
+<br>
+<hr>
+<br>
+
+<!-- Begin CS Illustrated -->
+<!-- Begin CS Illustrated -->
+<a name="CS Illustrated"></a>
+<table width="100%" cellspacing="0" cellpadding="2" border="0" align="center">
+<tbody><tr><td bgcolor="#000000">
+<table width="100%" cellspacing="0" cellpadding="10" border="0" align="center">
+<tbody><tr><td bgcolor="#EEEDD0">
+    <h2>CS Illustrated</h2>
+    Illustrations by Ketrina Yim (<a href="http://csillustrated.berkeley.edu/">csillustrated.berkeley.edu</a>)
+    
+<table cellspacing="12" cellpadding="0" border="0" align="center">
+  <tbody><tr>
+    <td align="center"><b>Number<br>Representations:</b>
+		</td><td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/integer-representations-1-handout.pdf">
+		<img alt="Integer Representations" src="CS61C%20Spring%202015_files/integer-representations-1-handout.jpg"></a></td> 
+		
+		<td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/integer-representations-2-comparing-handout.pdf"> 
+		<img alt="Comparing Integer Representations" src="CS61C%20Spring%202015_files/integer-representations-2-comparing-handout.jpg"></a></td> 
+		
+		<td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/integer-representations-3-comparing-handout.pdf"> 
+		<img alt="Comparing Integer Representations 2" src="CS61C%20Spring%202015_files/integer-representations-3-comparing-handout.jpg"></a></td> 
+		
+		<td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/integer-representations-4-comparing-handout.pdf"> 
+		<img alt="Comparing Integer Representations 3" src="CS61C%20Spring%202015_files/integer-representations-4-comparing-handout.jpg"></a></td> 
+	</tr> 
+	
+  <tr> 
+    <td align="center"><b>Floating Point<br>Numbers:</b>
+    </td><td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/floating-point-numbers-1-handout.pdf"> 
+		<img alt="Floating Point" src="CS61C%20Spring%202015_files/floating-point-numbers-1-handout.jpg"></a></td> 
+		
+		<td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/floating-point-numbers-2-handout.pdf"> 
+		<img alt="Floating Point Interpretations" src="CS61C%20Spring%202015_files/floating-point-numbers-2-handout.jpg"></a></td> 
+		
+		<td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/floating-point-numbers-3-line-handout.pdf"> 
+		<img alt="Floating Point Number Line" src="CS61C%20Spring%202015_files/floating-point-numbers-3-line-handout.jpg"></a></td> 
+  </tr>
+
+  <tr> 
+    <td align="center"><b>Caches:</b> 
+		</td><td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/cache-1-basics-handout.pdf"> 
+		<img alt="Caching Overview" src="CS61C%20Spring%202015_files/cache-1-basics-handout.jpg"></a></td> 
+  
+    <td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/cache-2-misses-handout.pdf"> 
+		<img alt="Cache Misses" src="CS61C%20Spring%202015_files/cache-2-misses-handout.jpg"></a></td> 
+		
+		<td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/cache-3-associativity-handout.pdf"> 
+		<img alt="Cache Associativity" src="CS61C%20Spring%202015_files/cache-3-associativity-handout.jpg"></a></td> 
+</tr>
+  <tr>
+    <td align="center"><b>Pointers and<br>Arrays:</b> 
+    </td><td align="center"><a href="http://csillustrated.berkeley.edu/PDFs/handouts/pointers-and-arrays-handout.pdf"> 
+		<img alt="Pointers and Arrays" src="CS61C%20Spring%202015_files/pointers-and-arrays-handout.jpg" height="250"></a></td>
+		
+	</tr> 
+	</tbody>
+	
+</table>	
+</td></tr></tbody></table>
+
+</td></tr>
+</tbody></table>
+<!-- end illustrated -->
+
+<!-- end illustrated -->
+
+
+<hr align="left">
+CS61C, <a href="http://www-inst.eecs.berkeley.edu/~cs61c/index.html">http://inst.eecs.berkeley.edu/~cs61c/</a>
+ 
+(Last Updated: 2015-01-27 @ 17:39)
+
+
+
+</body></html>
